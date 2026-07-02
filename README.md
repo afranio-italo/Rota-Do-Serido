@@ -17,7 +17,7 @@ Aprender a utilizar frameworks CSS, versionamento com Git e GitHub e por fim, re
 ## Autores
 
 - Afrânio Ítalo Araújo Silvério
-- João Roberto dos Santos Araújo
+- João Roberto Santos Araújo
 
 ## Instituição
 
