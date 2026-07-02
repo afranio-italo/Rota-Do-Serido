@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+main {
+  width: min(92%, 60rem);
+  margin: 0 auto;
+}
+
+header {
+  padding: 3rem 0 1rem;
+}
