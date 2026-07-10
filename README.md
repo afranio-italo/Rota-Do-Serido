@@ -1,7 +1,7 @@
 ## Sobre o Projeto 
 
-Projeto final da disciplina de padrões web, consiste em criar uma página web reponsiva sobre o turismo no seridó
-utilizando frameworks por meio do Bootstrap e hospeda-la no GitHub.
+Projeto final da disciplina de padrões web. Consiste em criar uma página web reponsiva sobre o turismo no seridó
+utilizando frameworks CSS por meio do Bootstrap e hospeda-la no GitHub.
 
 ## Objetivo
 
