@@ -14,13 +14,3 @@ header {
   padding: 3rem 0 1rem;
 }
 
-a {
-        color: #000000 ;
-        transition: color 0.2s ease-in-out;
-    }
-    a:hover {
-        color: #bf6c54;
-    }
-      .corpo{
-        background-color: #faf6f1;
-      }
