@@ -17,20 +17,29 @@ header {
 }
 
 a {
-        color: #000000 ;
-        transition: color 0.2s ease-in-out;
-    }
-    a:hover {
-        color: #bf6c54;
-    }
-      .corpo{
-        background-color:#F8F5EE;
-      }
-      .banner {
-  position: relative;
+  color: #000000 ;
+   transition: color 0.2s ease-in-out;
+}
+a:hover {
+   color: #bf6c54;
+}
+.corpo{
+  background-color:#F8F5EE;
+  }
+.banner {
+  position:relative;
   background-image: url('imagens1/bannerGeoparque.png');
-  background-size: cover;   
+  background-size: auto;   
   background-position: center;  
-  min-height: 200px;   
-  width: 100%;               
+  min-height: 250px;   
+  width: 100%;   
+  padding: auto;
+  text-indent: 2.5em;          
+}
+.btn{
+  color: #bf6c54 ;
+   transition: color 0.2s ease-in-out;
+}
+.btn:hover{
+  color: #df4b22;
 }
