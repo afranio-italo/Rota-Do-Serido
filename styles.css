@@ -1,16 +1,54 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-}
-
-header,
-main {
-  width: min(92%, 60rem);
-  margin: 0 auto;
-}
-
 header {
-  padding: 3rem 0 1rem;
+  color: #032844;
 }
 
+#navegacao-principal {
+  color: #032844;
+}
+
+@media (max-width: 767.98px) {
+  #imagem-inicio .ratio {
+    --bs-aspect-ratio: 70% !important;
+  }
+
+  #imagem-inicio h2 {
+    font-size: 1.75rem !important;
+  }
+
+  #imagem-inicio p {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #imagem-inicio .ratio {
+    --bs-aspect-ratio: 45% !important;
+  }
+
+  #imagem-inicio h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+:root {
+  --bs-danger: #C15A2E;
+  --bs-danger-rgb: 193, 90, 46;
+}
+
+.btn-danger {
+  --bs-btn-bg: #C15A2E;
+  --bs-btn-border-color: #C15A2E;
+  --bs-btn-hover-bg: #A94A24;
+  --bs-btn-hover-border-color: #A94A24;
+  --bs-btn-active-bg: #A94A24;
+  --bs-btn-active-border-color: #A94A24;
+}
+
+.btn-outline-danger {
+  --bs-btn-color: #C15A2E;
+  --bs-btn-border-color: #C15A2E;
+  --bs-btn-hover-bg: #C15A2E;
+  --bs-btn-hover-border-color: #C15A2E;
+  --bs-btn-active-bg: #C15A2E;
+  --bs-btn-active-border-color: #C15A2E;
+}
