@@ -1,11 +1,22 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+.html{
+    padding: 20px 60px;
+}
+  
 body {
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.5;
   overflow-x: hidden; 
   height: auto ;
+ 
 }
-
 
 header,main {
   width: min(92%, 70rem);
@@ -24,7 +35,7 @@ a:hover {
    color: #bf6c54;
 }
 .corpo{
-  background-color:#F8F5EE;
+  background-color:#fffffd;
   }
 .banner {
   position:relative;
@@ -46,7 +57,7 @@ a:hover {
  
 :root {
 --accent-orange: #B84A1D;
---accent-light: #ffffff ;
+--accent-light: #e6e0e0 ;
 --border-color: #E3DEC2;
 }
 
@@ -201,7 +212,7 @@ footer {
 }
 .sub-footer {
     background-color: var(--primary-dark);
-    color: #fff;
+    color: #420000;
     font-size: 0.85rem;
     padding: 15px 0;
     margin-top: 40px;
