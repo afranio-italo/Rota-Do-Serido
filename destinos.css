@@ -1,3 +1,58 @@
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bs-danger: #C15A2E;
+    --bs-danger-rgb: 193, 90, 46;
+}
+
+.btn-danger {
+    --bs-btn-bg: #C15A2E;
+    --bs-btn-border-color: #C15A2E;
+    --bs-btn-hover-bg: #A94A24;
+    --bs-btn-hover-border-color: #A94A24;
+    --bs-btn-active-bg: #A94A24;
+    --bs-btn-active-border-color: #A94A24;
+}
+
+.btn-outline-danger {
+    --bs-btn-color: #C15A2E;
+    --bs-btn-border-color: #C15A2E;
+    --bs-btn-hover-bg: #C15A2E;
+    --bs-btn-hover-border-color: #C15A2E;
+    --bs-btn-active-bg: #C15A2E;
+    --bs-btn-active-border-color: #C15A2E;
+}
+
+#navegacao-principal a {
+    padding-bottom: .25rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s ease;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+#navegacao-principal a:hover {
+    border-bottom-color: #C15A2E;
+}
+
+#planejamento li+li {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
+/* linhas entre os itens */
+@media (min-width: 768px) {
+    #rodape-final {
+        min-height: 2rem;
+    }
+
+    #rodape-final #feito-amor {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

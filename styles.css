@@ -6,6 +6,10 @@ header {
   color: #032844;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 #navegacao-principal {
   color: #032844;
 }
