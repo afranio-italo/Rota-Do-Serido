@@ -1,272 +1,211 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Destinos</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-        crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="destinos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rota do Seridó - Destinos</title>
+  <link rel="stylesheet" href="destinos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
 </head>
-
 <body>
 
-    <header id="cabecalho">
-        <img src="" alt="Logo Rota do Seridó">
-        <h1>Rota Do Seridó</h1>
-    </header>
-
-    <nav id="navegacao-principal">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="destinos.html">Destinos</a></li>
-            <li><a href="#">Roteiros</a></li>
-            <li><a href="#">Sobre</a></li>
+  <!-- NAVBAR -->
+  <header class="navbar navbar-expand-lg py-3 border-bottom border-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="LogoRotaDoSerido.png" alt="Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav gap-2">
+          <li><a class="nav-link" href="#">Início</a></li>
+          <li><a class="nav-link active" href="#">Destinos</a></li>
+          <li><a class="nav-link" href="#">Roteiros</a></li>
+          <li><a class="nav-link" href="#">Sobre</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container my-4">
+    
+    <!-- Breadcrumbs & Título -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="#" class="text-orange text-decoration-none">Início</a></li>
+        <li class="breadcrumb-item active text-dark">Destinos</li>
+      </ol>
     </nav>
+    <h1 class="fw-bold display-5 mb-1">Destinos</h1>
+    <p class="text-muted fs-5 mb-4">Explore os melhores lugares do Seridó.</p>
 
-    <main>
-        <section id="cabecalho2">
-            <span>Início > Destinos</span>
-            <h2>Destinos</h2>
-            <p>Explore os melhores lugares do Seridó.</p>
-        </section>
+    <!-- Filtros -->
+    <div class="d-flex flex-wrap gap-2 mb-5">
+      <button class="btn btn-filtro active"><i class="bi bi-grid-fill me-2"></i>Todos</button>
+      <button class="btn btn-filtro"><i class="bi bi-tree-fill me-2"></i>Natureza</button>
+      <button class="btn btn-filtro"><i class="bi bi-bank me-2"></i>Cultura</button>
+      <button class="btn btn-filtro"><i class="bi bi-egg-fried me-2"></i>Gastronomia</button>
+    </div>
 
-        <section id="cards">
-
-            <nav id="navegacao-cards">
-                <ul>
-                    <li><a href="#">Todos</a></li>
-                    <li><a href="#">Natureza</a></li>
-                    <li><a href="#">Cultura</a></li>
-                    <li><a href="#">Gastronomia</a></li>
-                </ul>
-            </nav>
-
-            <div id="cards">
-                <article>
-                    <h3>Acari</h3>
-                    <p>
-                        Pedra do Rosário, Furna da Onça
-                        e serestas inesquecíveis.
-                    </p>
-                    <span>Região do Seridó</span>
-                    <p>Natureza</p>
-                    <p>Aventura</p>
-                    <a href="detalhe.html">Ver destino</a>
-                </article>
-
-                <article>
-                    <h3>Caicó</h3>
-                    <p>
-                        Ilha de Sant'Ana, cultura e uma
-                        história que encanta.
-                    </p>
-                    <span>Região do Seridó</span>
-                    <p>Cultura</p>
-                    <p>Eevntos</p>
-                    <a href="detalhe.html">Ver destino</a>
-                </article>
-
-                <article>
-                    <h3>Parelhas</h3>
-                    <p>
-                        Pedra da Boca, mirantes e a
-                        hospitalidade do interior.
-                    </p>
-                    <span>Região do Seridó</span>
-                    <p>Natureza</p>
-                    <p>Aventura</p>
-                    <a href="detalhe.html">Ver destino</a>
-                </article>
-
-                <article>
-                    <h3>Gastronomia do Seridó</h3>
-                    <p>
-                        Sabores típicos e experiências que
-                        contam a nossa história.
-                    </p>
-                    <span>Região do Seridó</span>
-                    <p>Gastronomia</p>
-                    <p>Cultura</p>
-                    <a href="detalhe.html">Ver destino</a>
-                </article>
-
-                <article>
-                    <h3>Serra de São Bernardo</h3>
-                    <p>
-                        Trilhas, mirantes e contato
-                        com a natureza.
-                    </p>
-                    <span>Região do Seridó</span>
-                    <p>Natureza</p>
-                    <p>Aventura</p>
-                    <a href="detalhe.html">Ver destino</a>
-                </article>
-
-                <article>
-                    <h3>Festas e tradições</h3>
-                    <p>
-                        Festas, vaquejadas e cultura popular
-                        que movem o Seridó.
-                    </p>
-                    <span>Região do Seridó</span>
-                    <p>Cultura</p>
-                    <p>Eventos</p>
-                    <a href="detalhe.html">Ver destino</a>
-                </article>
+    <!-- Grid de Conteúdo -->
+    <div class="row g-4">
+      
+      <!-- Seção de Destinos (Usa row-cols para remover divs de coluna individuais) -->
+      <section class="col-lg-8 row row-cols-1 row-cols-md-2 g-4 m-0">
+        
+        <!-- Card 1 -->
+        <article class="card border-0 bg-transparent col">
+          <img src="caminho_imagem1.jpg" alt="Acari" class="img-card bg-secondary-subtle">
+          <div class="card-body px-0 py-3">
+            <h3 class="fw-bold h5 mb-2">Acari</h3>
+            <p class="text-muted small">Pedra do Rosário, Furna da Onça e serrestas inesquecíveis.</p>
+            <span class="text-orange small fw-bold d-block mb-2"><i class="bi bi-geo-alt-fill me-1"></i>Região do Seridó</span>
+            <div class="mb-3 d-flex gap-1">
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-tree-fill me-1"></i>Natureza</span>
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-compass-fill me-1"></i>Aventura</span>
             </div>
+            <button class="btn btn-outline-orange w-100 py-2 fw-bold">Ver destino <i class="bi bi-arrow-right ms-1"></i></button>
+          </div>
+        </article>
 
-        </section>
-
-        <aside id="sidebar">
-
-            <div id="planejamento">
-                <h3>Planeje sua viagem</h3>
-                <p>
-                    Organize paradas, descubra atrações
-                    e monte o roteiro perfeito para você.
-                </p>
-                <a href="#">Monte seu roteiro</a>
-
-                <p>
-                    Roteiros
-                    personalizados
-                </p>
-                <p>
-                    Dicas de
-                    experiências
-                </p>
-                <p>
-                    Mapas e
-                    sugestões de rotas
-                </p>
+        <!-- Card 2 -->
+        <article class="card border-0 bg-transparent col">
+          <img src="caminho_imagem2.jpg" alt="Caicó" class="img-card bg-secondary-subtle">
+          <div class="card-body px-0 py-3">
+            <h3 class="fw-bold h5 mb-2">Caicó</h3>
+            <p class="text-muted small">Ilha de Sant'Ana, cultura e uma história que encanta.</p>
+            <span class="text-orange small fw-bold d-block mb-2"><i class="bi bi-geo-alt-fill me-1"></i>Região do Seridó</span>
+            <div class="mb-3 d-flex gap-1">
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-bank me-1"></i>Cultura</span>
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-calendar-event-fill me-1"></i>Eventos</span>
             </div>
+            <button class="btn btn-outline-orange w-100 py-2 fw-bold">Ver destino <i class="bi bi-arrow-right ms-1"></i></button>
+          </div>
+        </article>
 
-            <div id="quando-visitar">
-                <table>
-                    <caption>Quando visitar</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Período</th>
-                            <th scope="col">Clima</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Jan - Mar</td>
-                            <td>Quente e úmido</td>
-                        </tr>
-
-                        <tr>
-                            <td>Abr - Jun</td>
-                            <td>Ameno e seco</td>
-                        </tr>
-
-                        <tr>
-                            <td>Jul - Set</td>
-                            <td>Seco e ensolarado</td>
-                        </tr>
-
-                        <tr>
-                            <td>Out - Dez</td>
-                            <td>Quente e seco</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p>Melhor época: de Junho a Setembro</p>
+        <!-- Card 3 -->
+        <article class="card border-0 bg-transparent col">
+          <img src="caminho_imagem3.jpg" alt="Parelhas" class="img-card bg-secondary-subtle">
+          <div class="card-body px-0 py-3">
+            <h3 class="fw-bold h5 mb-2">Parelhas</h3>
+            <p class="text-muted small">Pedra da Boca, mirantes e a hospitalidade do interior.</p>
+            <span class="text-orange small fw-bold d-block mb-2"><i class="bi bi-geo-alt-fill me-1"></i>Região do Seridó</span>
+            <div class="mb-3 d-flex gap-1">
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-tree-fill me-1"></i>Natureza</span>
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-compass-fill me-1"></i>Aventura</span>
             </div>
+            <button class="btn btn-outline-orange w-100 py-2 fw-bold">Ver destino <i class="bi bi-arrow-right ms-1"></i></button>
+          </div>
+        </article>
 
-        </aside>
+        <!-- Card 4 -->
+        <article class="card border-0 bg-transparent col">
+          <img src="caminho_imagem4.jpg" alt="Gastronomia" class="img-card bg-secondary-subtle">
+          <div class="card-body px-0 py-3">
+            <h3 class="fw-bold h5 mb-2">Gastronomia do Seridó</h3>
+            <p class="text-muted small">Sabores típicos e experiências que contam a nossa história.</p>
+            <span class="text-orange small fw-bold d-block mb-2"><i class="bi bi-geo-alt-fill me-1"></i>Região do Seridó</span>
+            <div class="mb-3 d-flex gap-1">
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-egg-fried me-1"></i>Gastronomia</span>
+              <span class="badge bg-orange-light text-orange px-2 py-1"><i class="bi bi-bank me-1"></i>Cultura</span>
+            </div>
+            <button class="btn btn-outline-orange w-100 py-2 fw-bold">Ver destino <i class="bi bi-arrow-right ms-1"></i></button>
+          </div>
+        </article>
 
-    </main>
+      </section>
 
-    <footer id="rodape">
-
-        <section>
-
-            <img src="" alt="Logo Rota do Seridó">
-
-            <p>
-                A Rota do Seridó é um convite para viver experiências
-                autênticas em um dos territórios mais acolhedores do
-                Rio Grande do Norte.
-            </p>
-
+      <!-- Sidebar (Coluna Direita) -->
+      <aside class="col-lg-4 d-flex flex-column gap-4">
+        
+        <!-- Planeje sua viagem -->
+        <section class="bg-dark text-white p-4 sidebar-box" style="background-color: var(--azul-escuro) !important;">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <i class="bi bi-map fs-1 text-warning"></i>
+            <h3 class="fw-bold h4 mb-0">Planeje sua viagem</h3>
+          </div>
+          <p class="small text-white-50 mb-4">Organize paradas, descubra atrações e monte seu roteiro.</p>
+          <button class="btn bg-orange text-white w-100 py-2 fw-bold d-flex justify-content-between align-items-center mb-4">
+            Monte seu roteiro <i class="bi bi-arrow-right"></i>
+          </button>
+          <a href="#" class="d-flex justify-content-between align-items-center py-3 border-top border-secondary text-white text-decoration-none small">
+            <span><i class="bi bi-calendar-check me-2 text-warning"></i> Roteiros personalizados</span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
+          <a href="#" class="d-flex justify-content-between align-items-center py-3 border-top border-bottom border-secondary text-white text-decoration-none small">
+            <span><i class="bi bi-lightbulb me-2 text-warning"></i> Dicas de experiências</span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
         </section>
 
-        <nav id="Navegacao-rodape">
-
-            <h4>Navegação</h4>
-            <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Destinos</a></li>
-                <li><a href="">Roteiros</a></li>
-                <li><a href="">Sobre</a></li>
-            </ul>
-
-        </nav>
-
-        <section id="informacoes">
-
-            <h4>Informações</h4>
-            <ul>
-                <li><a href="">Como chegar</a></li>
-                <li><a href="">Onde ficar</a></li>
-                <li><a href="">Dicas úteis</a></li>
-                <li><a href="">Fale conosco</a></li>
-            </ul>
-
+        <!-- Quando visitar -->
+        <section class="bg-white p-4 border border-light sidebar-box">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="bi bi-calendar3 fs-3 text-warning"></i>
+            <h4 class="fw-bold h5 mb-0">Quando visitar</h4>
+          </div>
+          <table class="table table-borderless table-sm small mb-3">
+            <tbody>
+              <tr><td class="fw-bold">Jan - Mar</td><td class="text-end text-muted">Quente e úmido</td></tr>
+              <tr><td class="fw-bold">Abr - Jun</td><td class="text-end text-muted">Ameno e seco</td></tr>
+              <tr><td class="fw-bold">Jul - Set</td><td class="text-end text-muted">Seco e ensolarado</td></tr>
+            </tbody>
+          </table>
+          <p class="text-center text-orange fw-bold mb-0 small">Melhor época: de Junho a Setembro.</p>
         </section>
 
-        <section id="redes-sociais">
+      </aside>
 
-            <h4>Siga e compartilhe</h4>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">YouTube</a></li>
-            </ul>
-            <p>#RotadoSeridó</p>
+    </div>
+  </main>
 
-        </section>
+  <!-- FOOTER -->
+  <footer class="pt-5 pb-3 mt-5 bg-light border-top">
+    <div class="container row g-4 m-auto">
+      <div class="col-lg-4">
+        <img src="LogoRotaDoSerido.png" alt="Logo" class="mb-3" height="50">
+        <p class="text-muted small">A Rota do Seridó é um convite para viver experiências autênticas no RN.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5 class="fw-bold small mb-3">Navegação</h5>
+        <ul class="list-unstyled lh-lg small">
+          <li><a href="#" class="text-dark text-decoration-none">Início</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Destinos</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5 class="fw-bold small mb-3">Siga-nos</h5>
+        <div class="d-flex gap-3 mb-2 fs-4">
+          <a href="#" class="text-orange"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-orange"><i class="bi bi-facebook"></i></a>
+        </div>
+        <span class="text-muted small fw-bold">#RotadoSeridó</span>
+      </div>
+      <div class="col-lg-3">
+        <h5 class="fw-bold small mb-3">Inspiração</h5>
+        <div class="row g-1">
+          <div class="col-3"><img src="foto1.jpg" alt="" class="w-100 bg-secondary-subtle rounded" style="height: 50px; object-fit: cover;"></div>
+          <div class="col-3"><img src="foto2.jpg" alt="" class="w-100 bg-secondary-subtle rounded" style="height: 50px; object-fit: cover;"></div>
+          <div class="col-3"><img src="foto3.jpg" alt="" class="w-100 bg-secondary-subtle rounded" style="height: 50px; object-fit: cover;"></div>
+          <div class="col-3"><img src="foto4.jpg" alt="" class="w-100 bg-secondary-subtle rounded" style="height: 50px; object-fit: cover;"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        <section id="inspiracao">
+  <!-- SUB-FOOTER -->
+  <div class="py-3 text-center text-white-50 bg-dark small">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <span>© 2024 Rota do Seridó.</span>
+      <span>Feito com amor pelo Seridó. <i class="bi bi-heart-fill text-danger"></i></span>
+    </div>
+  </div>
 
-            <h4>Inspiração</h4>
-
-            <figure>
-                <img src="" alt="">
-            </figure>
-
-            <figure>
-                <img src="" alt="">
-            </figure>
-
-            <figure>
-                <img src="" alt="">
-            </figure>
-
-            <figure>
-                <img src="" alt="">
-            </figure>
-
-        </section>
-
-        <section id="conclusao">
-
-            <p>&copy; 2024 Rota do Seridó. Todos os direitos reservados.</p>
-            <p>Feito com amor pelo Seridó.</p>
-
-        </section>
-
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

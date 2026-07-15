@@ -1,3 +1,23 @@
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+:root {
+      --bg-serido: #faf8f5;
+      --azul-escuro: #05233a;
+      --laranja: #b8572a;
+      --laranja-suave: #f9ebe3;
+    }
+    body { background: var(--bg-serido); color: var(--azul-escuro); font-family: system-ui, sans-serif; }
+    
+    /* Cores e Botões */
+    .text-orange { color: var(--laranja) ; }
+    .bg-orange { background-color: var(--laranja) ; }
+    .bg-orange-light { background-color: var(--laranja-suave) ; }
+    .nav-link.active { color: var(--laranja) ; border-bottom: 2px solid var(--laranja); }
+    
+    .btn-filtro { border: 1px solid #ddd; background: #fff; color: var(--azul-escuro); }
+    .btn-filtro.active, .btn-filtro:hover { background: var(--laranja); color: #fff; border-color: var(--laranja); }
+    
+    .btn-outline-orange { border: 1px solid var(--laranja); color: var(--laranja); }
+    .btn-outline-orange:hover { background: var(--laranja); color: #fff; }
+
+    /* Imagens e Cards */
+    .img-card { height: 200px; object-fit: cover; border-radius: 12px; }
+    .sidebar-box { border-radius: 16px; }
