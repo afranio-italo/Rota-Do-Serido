@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  overflow-x: hidden; 
+  height: auto ;
 }
 
 
@@ -44,7 +46,7 @@ a:hover {
  
 :root {
 --accent-orange: #B84A1D;
---accent-light: #F4EFE6;
+--accent-light: #ffffff ;
 --border-color: #E3DEC2;
 }
 
@@ -103,12 +105,12 @@ body {
 .info-item-icon {
     width: 40px;
     height: 40px;
-    background: #fff;
+    background:  #9c3c15;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-dark);
+    color: #ffffff;
     margin-right: 15px;
     flex-shrink: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.03);
@@ -144,11 +146,11 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 12px;
-    background-color: #fff;
+    background-color: #ffffff;
     color: var(--primary-dark);
 }
 .form-control::placeholder {
-    color: #A0AAB2;
+    color: #008cff;
 }
 .btn-booking {
     background-color: var(--accent-orange);
@@ -205,5 +207,4 @@ footer {
     margin-top: 40px;
 }
 
-        
         
