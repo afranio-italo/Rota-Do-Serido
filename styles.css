@@ -6,6 +6,15 @@ header {
   color: #032844;
 }
 
+#navegacao-principal a {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+#navegacao-principal a:hover {
+  border-bottom-color: #C15A2E;
+}
+
 @media (max-width: 767.98px) {
   #imagem-inicio .ratio {
     --bs-aspect-ratio: 70% !important;
