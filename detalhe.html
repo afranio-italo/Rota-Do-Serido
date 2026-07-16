@@ -1,379 +1,203 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+<html lang="pt-BR">
+
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Detalhes - Rota do Seridó</title>
-     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="detalhes.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geoparque Seridó - Rota do Seridó</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="detalhes.css" />
+
 </head>
-<body class="pagina-detalhe">
 
-    <header >
-        <nav  class="d-flex align-items-center p-3">
-            <img src="imagens1/LogoRotaDoSerido.png" style="max-height: 70px; width: auto;" >
-        <div >
-           <p class=" fs-3 fw-bold " style="font-family: Georgia, serif;">Rota do Seridó - Acari</p>
-        </div>
-            <ul class="list-unstyled d-flex gap-4 ms-auto mb-0">
-                <li type="button" ><a href="#" class="text-decoration-underline fw-bold">Início</a></li>
-                <li type="button" ><a href="#" class="text-decoration-underline fw-bold">Destinos</a></li>
-                <li type="button"><a href="#" class="text-decoration-underline fw-bold">Roteiros</a></li>
-                <li type="button" ><a href="#" class="text-decoration-underline fw-bold">Sobre</a></li>
-            </ul>
-        </nav>
+<body>
 
-        <div >
-            <ul class="list-unstyled d-flex gap-4 ms-auto mb-0">    
-                <li type="button" ><a href="index.html" class="text-decoration-none fw-bold">
-                <i class="bi bi-house-door-fill"></i> Inicio</a></li>
-                <li type="button" ><a href="destinos.html" class="text-decoration-none fw-bold">Destinos</a></li>                
-                <li type="button"><a href="#" class="text-decoration-none fw-bold">Geoparque Seridó</a></li>             
-            </ul>
-        </div>
-
- <section ms-5  class="texto-banner" my-2 id="inicio-pg">
-    <div class="banner  align-items-center  rounded-4">
-            <h1  class="card-title  fw-bold mb-3" style="font-family: Georgia, serif;"> Geoparque Seridó</h1>
-            <p class="card-text  fw-semibold "><i  class="bi bi-geo-alt-fill text-danger"></i> Região do Seridó, Rio Grande do Norte</p>
-
-            <div  class="card-text lh-1 fw-semibold ">
-                <p>Terra de milhões de anos, onde a geologia conta histórias</p>
-                <p> esculpidas em rochas, serras e fozes. Natureza, ciência </p>
-                <p> e cultura se encontram em experiências inesquecíveis.</p>
-            </div>
-<div class="d-flex justify-content-end w-100">
-  <div class="d-flex align-items-center text-white text-center gap-4 py-4">
-    
-    <div class="p-2 d-flex flex-column align-items-center">
-      <i class="bi bi-tree fs-2 mb-1"></i>
-      <span class="fw-bold">Natureza</span>
-    </div>
-
-    <div class="p-2 d-flex flex-column align-items-center">
-      <i class="bi bi-compass fs-2 mb-1"></i>
-      <span class="fw-bold">Aventura</span>
-    </div>
-
-    <div class="p-2 d-flex flex-column align-items-center">
-      <i class="bi bi-cup-hot fs-2 mb-1"></i>
-      <span class="fw-bold">Gastronomia</span>
-    </div>
-
-    <div class="p-2 d-flex flex-column align-items-center">
-      <i class="bi bi-music-note-beamed fs-3 mb-1"></i>
-      <span class="fw-bold">Cultura</span>
-    </div>
+  <div class="container d-flex justify-content-between align-items-center py-3">
+    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+      <img src="imagens1/LogoRotaDoSerido.png" alt="Logo Rota do Seridó" width="120" height="80">
+      <span class="fs-4 fw-bold text-dark">Rota Do Seridó</span>
+    </a>
+    <nav id="navegacao-principal" class="list-unstyled d-flex gap-4 mb-0">
+      <a class="text-decoration-none fw-semibold text-dark" href="index.html">Início</a>
+      <a class="text-decoration-none fw-semibold text-dark" href="destinos.html">Destinos</a>
+      <a class="text-decoration-none fw-semibold text-dark" href="#">Roteiros</a>
+      <a class="text-decoration-none fw-semibold text-dark" href="#">Sobre</a>
+    </nav>
   </div>
-</div>
-</section>
-</div >
-</header>
 
-<main class="container my-1">
-        <div class="row g-5">
-            <div class="col-lg-8">
-               
-    <section  class="row mt-3 ">
+  <p class="container small mb-2">
+    <a href="index.html" class="text-dark text-decoration-none"><i class="bi bi-house-door-fill me-1"></i>Início</a>
+    <i class="bi bi-chevron-right mx-1 text-muted"></i>
+    <a href="destinos.html" class="text-dark text-decoration-none">Destinos</a>
+    <i class="bi bi-chevron-right mx-1 text-muted"></i>
+    <span class="text-danger fw-semibold">Geoparque Seridó</span>
+  </p>
 
-            <div style="max-width: 180px;">
-                <img src="imagens1/açude.png" class="card-img-top me-1 w-100 rounded-4" alt="Descrição da imagem">
+  <section class="position-relative rounded-4 overflow-hidden mx-3 mx-md-4 mb-4">
+    <div class="ratio ratio-21x9" style="--bs-aspect-ratio:30%">
+      <img src="imagens1/bannerGeoparque.png" class="object-fit-cover" alt="Geoparque Seridó">
+    </div>
+    <div class="position-absolute top-0 start-0 h-100 d-flex align-items-start p-4 p-md-5" style="max-width:640px">
+      <div>
+        <h1 class="display-3 fw-bold" style="color:#032844;font-family:Georgia,serif;">Geoparque Seridó</h1>
+        <p class="fw-semibold mb-2" style="color:#032844;"><i class="bi bi-geo-alt-fill text-danger me-1"></i>Região do Seridó, Rio Grande do Norte</p>
+        <p class="mb-4" style="color:#032844;">Terra de milhões de anos, onde a geologia conta histórias esculpidas em rochas, serras e fósseis. Natureza, ciência e cultura se encontram em experiências inesquecíveis.</p>
+        <div class="d-flex gap-4 text-white">
+          <div class="text-center"><i class="bi bi-tree fs-3 d-block mb-1"></i><span class="fw-bold small">Natureza</span></div>
+          <div class="text-center"><i class="bi bi-camera fs-3 d-block mb-1"></i><span class="fw-bold small">Aventura</span></div>
+          <div class="text-center"><i class="bi bi-cup-hot fs-3 d-block mb-1"></i><span class="fw-bold small">Gastronomia</span></div>
+          <div class="text-center"><i class="bi bi-bank2 fs-3 d-block mb-1"></i><span class="fw-bold small">Cultura</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+
+        <!-- galeria de fotos -->
+        <div class="row g-3 mb-4">
+          <div class="col-3"><img src="imagens1/açude.png" class="rounded-4 w-100" style="height:170px;object-fit:cover" alt="Açude"></div>
+          <div class="col-3"><img src="imagens1/serra2.png" class="rounded-4 w-100" style="height:170px;object-fit:cover" alt="Serra"></div>
+          <div class="col-3"><img src="imagens1/solNascer.png" class="rounded-4 w-100" style="height:170px;object-fit:cover" alt="Fóssil"></div>
+          <div class="col-3 position-relative">
+            <img src="imagens1/museu.png" class="rounded-4 w-100" style="height:170px;object-fit:cover" alt="Museu">
+            <button class="btn btn-light rounded-circle shadow position-absolute top-50 end-0 translate-middle" style="width:40px;height:40px;"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- roteiro do dia -->
+        <h2 class="h3 fw-bold mb-4 d-inline-block border-bottom border-danger border-3 pb-1" style="color:#032844;">Roteiro de um dia</h2>
+
+        <div class="position-relative mb-4 d-none d-md-block">
+          <div class="tl-line"></div>
+          <div class="row text-center">
+            <div class="col"><div class="tl-icon tl-on"><i class="bi bi-geo-alt-fill"></i></div><div class="fw-bold small">08:00</div><h3 class="fw-bold small mb-1">Boas-vindas</h3><p class="text-muted mb-0" style="font-size:.75rem;">Recepção em Currais Novos e café regional.</p></div>
+            <div class="col"><div class="tl-icon tl-off"><i class="bi bi-camera-fill"></i></div><div class="fw-bold small">09:00</div><h3 class="fw-bold small mb-1">Pedra do Navio</h3><p class="text-muted mb-0" style="font-size:.75rem;">Visita ao geossítio e trilha curta com vista.</p></div>
+            <div class="col"><div class="tl-icon tl-on"><i class="bi bi-archive-fill"></i></div><div class="fw-bold small">11:00</div><h3 class="fw-bold small mb-1">Museu do Seridó</h3><p class="text-muted mb-0" style="font-size:.75rem;">História, paleontologia e cultura do sertão.</p></div>
+            <div class="col"><div class="tl-icon tl-off"><i class="bi bi-egg-fried"></i></div><div class="fw-bold small">13:00</div><h3 class="fw-bold small mb-1">Almoço regional</h3><p class="text-muted mb-0" style="font-size:.75rem;">Sabores típicos da cozinha seridoense.</p></div>
+            <div class="col"><div class="tl-icon tl-on"><i class="bi bi-triangle-fill"></i></div><div class="fw-bold small">15:00</div><h3 class="fw-bold small mb-1">Geossítios e paisagens</h3><p class="text-muted mb-0" style="font-size:.75rem;">Mirantes, formações rochosas e natureza.</p></div>
+            <div class="col"><div class="tl-icon tl-off"><i class="bi bi-bank2"></i></div><div class="fw-bold small">17:00</div><h3 class="fw-bold small mb-1">Centro histórico</h3><p class="text-muted mb-0" style="font-size:.75rem;">Patrimônio, artesanato e experiências locais.</p></div>
+          </div>
+        </div>
+
+        <!-- versão empilhada pro celular -->
+        <div class="d-md-none mb-4">
+          <div class="mb-3 ps-3 border-start border-2 border-danger"><span class="badge bg-danger-subtle text-danger mb-1">08:00</span><h4 class="h6 fw-bold mb-1">Boas-vindas</h4><p class="text-muted small mb-0">Recepção em Currais Novos e café regional.</p></div>
+          <div class="mb-3 ps-3 border-start border-2 border-danger"><span class="badge bg-danger-subtle text-danger mb-1">09:00</span><h4 class="h6 fw-bold mb-1">Pedra do Navio</h4><p class="text-muted small mb-0">Visita ao geossítio e trilha curta com vista.</p></div>
+          <div class="mb-3 ps-3 border-start border-2 border-danger"><span class="badge bg-danger-subtle text-danger mb-1">11:00</span><h4 class="h6 fw-bold mb-1">Museu do Seridó</h4><p class="text-muted small mb-0">História, paleontologia e cultura do sertão.</p></div>
+          <div class="mb-3 ps-3 border-start border-2 border-danger"><span class="badge bg-danger-subtle text-danger mb-1">13:00</span><h4 class="h6 fw-bold mb-1">Almoço regional</h4><p class="text-muted small mb-0">Sabores típicos da cozinha seridoense.</p></div>
+          <div class="mb-3 ps-3 border-start border-2 border-danger"><span class="badge bg-danger-subtle text-danger mb-1">15:00</span><h4 class="h6 fw-bold mb-1">Geossítios e paisagens</h4><p class="text-muted small mb-0">Mirantes, formações rochosas e natureza.</p></div>
+          <div class="mb-3 ps-3 border-start border-2 border-danger"><span class="badge bg-danger-subtle text-danger mb-1">17:00</span><h4 class="h6 fw-bold mb-1">Centro histórico</h4><p class="text-muted small mb-0">Patrimônio, artesanato e experiências locais.</p></div>
+        </div>
+
+        <!-- informações práticas + melhor época -->
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h2 class="h5 fw-bold mb-3" style="color:#032844;">Informações práticas</h2>
+            <div class="row row-cols-2 g-2">
+              <div class="col"><div class="border rounded-4 p-2 h-100"><i class="bi bi-stopwatch text-secondary mb-1 d-block"></i><strong class="d-block small">Duração</strong><span class="text-muted" style="font-size:.72rem;">Roteiro de 1 dia (aprox. 9 horas)</span></div></div>
+              <div class="col"><div class="border rounded-4 p-2 h-100"><i class="bi bi-bar-chart-fill text-secondary mb-1 d-block"></i><strong class="d-block small">Nível de atividade</strong><span class="text-muted" style="font-size:.72rem;">Leve a moderado. Acessos fáceis.</span></div></div>
+              <div class="col"><div class="border rounded-4 p-2 h-100"><i class="bi bi-backpack2 text-secondary mb-1 d-block"></i><strong class="d-block small">O que levar</strong><span class="text-muted" style="font-size:.72rem;">Roupas leves, chapéu, protetor, água.</span></div></div>
+              <div class="col"><div class="border rounded-4 p-2 h-100"><i class="bi bi-signpost-2 text-secondary mb-1 d-block"></i><strong class="d-block small">Como chegar</strong><span class="text-muted" style="font-size:.72rem;">A partir de Natal: aprox. 3h30 (215 km).</span></div></div>
             </div>
+          </div>
 
-            <div style="max-width: 180px;">
-                <img src="imagens1/museu.png" class="card-img-top ms-1 w-100 rounded-4" alt="Descrição da imagem">
-            </div>
+          <div class="col-md-6">
+            <h2 class="h5 fw-bold mb-3" style="color:#032844;">Melhor época para visitar</h2>
+            <table class="table table-sm align-middle">
+              <thead><tr><th class="small text-muted">Período</th><th class="small text-muted">Condições</th></tr></thead>
+              <tbody class="small">
+                <tr><td class="fw-bold">Jan–Abr</td><td><i class="bi bi-sun-fill text-warning me-1"></i>Clima quente e seco, céu limpo.</td></tr>
+                <tr><td class="fw-bold">Mai–Ago</td><td><i class="bi bi-cloud-sun-fill text-secondary me-1"></i>Temperaturas amenas, ideal p/ trilhas.</td></tr>
+                <tr><td class="fw-bold">Set–Dez</td><td><i class="bi bi-cloud-rain-fill text-info me-1"></i>Mais chuvas, paisagens verdes.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-            <div style="max-width: 180px;">
-                <img src="imagens1/serra2.png" class="card-img-top ms-1 w-100 rounded-4" alt="Descrição da imagem">
-            </div>
+      </div>
 
-            <div style="max-width: 180px;">
-                <img src="imagens1/solNascer.png" class="card-img-top ms-1 w-100 rounded-4" alt="Descrição da imagem">
+      <!-- formulário -->
+      <div class="col-lg-4">
+        <aside class="bg-white rounded-4 shadow-sm p-4">
+          <h2 class="h3 fw-bold mb-4 d-inline-block border-bottom border-danger border-3 pb-1" style="color:#032844;">Quero conhecer</h2>
+          <form>
+            <div class="mb-3"><label for="data" class="form-label fw-semibold small text-secondary">Data desejada</label><input type="date" id="data" class="form-control"></div>
+            <div class="mb-3"><label for="viajantes" class="form-label fw-semibold small text-secondary">Viajantes</label>
+              <select id="viajantes" class="form-select">
+                <option value="">Selecione o número de viajantes</option>
+                <option value="1">1 viajante</option>
+                <option value="2">2 viajantes</option>
+                <option value="3">3 ou mais viajantes</option>
+              </select>
             </div>
+            <div class="mb-3"><label for="nome" class="form-label fw-semibold small text-secondary">Nome completo</label><input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo"></div>
+            <div class="mb-3"><label for="email" class="form-label fw-semibold small text-secondary">E-mail</label><input type="email" id="email" class="form-control" placeholder="seu@email.com"></div>
+            <div class="mb-3"><label for="telefone" class="form-label fw-semibold small text-secondary">Telefone / WhatsApp</label><input type="tel" id="telefone" class="form-control" placeholder="(84) 99999-9999"></div>
+            <div class="mb-4"><label for="mensagem" class="form-label fw-semibold small text-secondary">Mensagem (opcional)</label><textarea id="mensagem" class="form-control" rows="3" placeholder="Conte-nos algo sobre sua viagem"></textarea></div>
+            <button type="submit" class="btn btn-danger w-100 fw-bold d-flex align-items-center justify-content-center gap-2"><i class="bi bi-send-fill"></i>ENVIAR INTERESSE</button>
+            <p class="text-center mb-0 mt-3"><small class="text-muted" style="font-size:.75rem;"><i class="bi bi-shield-lock-fill"></i> Seus dados estão seguros e não serão compartilhados.</small></p>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="rodape" class="bg-light border-top mt-5">
+    <div class="container row g-2 py-4">
+      <section class="d-flex flex-column flex-sm-row justify-content-between col-12 col-lg-4 gap-3">
+        <img src="imagens1/LogoRotaDoSerido.png" alt="Logo Rota do Seridó" width="120" height="80" class="mb-2">
+        <small class="text-muted" style="text-align:justify;">A Rota do Seridó é um convite para viver experiências autênticas em um dos territórios mais acolhedores do Rio Grande do Norte.</small>
+      </section>
+      <nav class="col-12 col-sm-6 col-lg-1">
+        <h4 class="fs-6 fw-bold">Navegação</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none small">Início</a></li>
+          <li class="mb-2"><a href="destinos.html" class="text-muted text-decoration-none small">Destinos</a></li>
+          <li class="mb-2"><a href="" class="text-muted text-decoration-none small">Roteiros</a></li>
+          <li class="mb-2"><a href="" class="text-muted text-decoration-none small">Sobre</a></li>
+        </ul>
+      </nav>
+      <section class="col-12 col-sm-6 col-lg-1">
+        <h4 class="fs-6 fw-bold">Informações</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="" class="text-muted text-decoration-none small">Como chegar</a></li>
+          <li class="mb-2"><a href="" class="text-muted text-decoration-none small">Onde ficar</a></li>
+          <li class="mb-2"><a href="" class="text-muted text-decoration-none small">Dicas úteis</a></li>
+          <li class="mb-2"><a href="" class="text-muted text-decoration-none small">Fale conosco</a></li>
+        </ul>
+      </section>
+      <section class="col-12 col-sm-6 col-lg-2">
+        <h4 class="fs-6 fw-bold small pb-3">Siga e compartilhe</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="" class="btn btn-danger btn-sm rounded-circle"><i class="bi bi-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="" class="btn btn-danger btn-sm rounded-circle"><i class="bi bi-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="" class="btn btn-danger btn-sm rounded-circle"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+        <p class="text-muted small">#RotadoSeridó</p>
+      </section>
+      <section class="col-12 col-sm-6 col-lg-4">
+        <h4 class="fs-6 fw-bold pb-3">Inspiração</h4>
+        <div class="row row-cols-4 g-2">
+          <figure class="col m-0"><img src="imagens1/Vaqueiros.png" alt="Vaqueiros" class="img-fluid rounded object-fit-cover w-100" style="height:100px"></figure>
+          <figure class="col m-0"><img src="imagens1/açude2.png" alt="Açude" class="img-fluid rounded object-fit-cover w-100" style="height:100px"></figure>
+          <figure class="col m-0"><img src="imagens1/cuscuz.png" alt="Cuscuz" class="img-fluid rounded object-fit-cover w-100" style="height:100px"></figure>
+          <figure class="col m-0"><img src="imagens1/cacto.png" alt="Cacto" class="img-fluid rounded object-fit-cover w-100" style="height:100px"></figure>
+        </div>
+      </section>
+    </div>
+    <section class="text-white-50 py-3" style="background-color:#032844;">
+      <div class="container small" id="rodape-final">
+        <p class="mb-0">&copy; 2024 Rota do Seridó. Todos os direitos reservados.</p>
+        <p class="mb-0">Feito com amor pelo Seridó. <i class="bi bi-heart-fill text-danger"></i></p>
+      </div>
     </section>
+  </footer>
 
-                <section class="mb-10 my-2">
-                    <h2 class="h3 fw-bold mb-4 title-style " id="Roteiro">Roteiro de um dia</h2>
-                    
-                    <div class="timeline-container ">
-                        <div class="timeline-line"></div>
-                        <div class="row text-center">
-                            
-                            <div class="col timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </div>
-                                <div class="fw-bold mb-1" style="font-size: 0.8rem;">08:00</div>
-                                <h3 class="fw-bold mb-1 text-dark" style="font-size: 0.9rem;">Boas-vindas</h3>
-                                <p class="text-muted lh-sm mb-0" style="font-size: 0.75rem;">Recepção em Acari e café regional.</p>
-                            </div>
-
-                            <div class="col timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="bi bi-camera-fill"></i>
-                                </div>
-                                <div class="fw-bold mb-1" style="font-size: 0.8rem;">09:00</div>
-                                <h3 class="fw-bold mb-1 text-dark" style="font-size: 0.9rem;">Pedra do Navio</h3>
-                                <p class="text-muted lh-sm mb-0" style="font-size: 0.75rem;">Visita a geossítios e trilhas curtas.</p>
-                            </div>
-
-                            <div class="col timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="bi bi-bank2"></i>
-                                </div>
-                                <div class="fw-bold mb-1" style="font-size: 0.8rem;">11:00</div>
-                                <h3 class="fw-bold mb-1 text-dark" style="font-size: 0.9rem;">Museu do Seridó</h3>
-                                <p class="text-muted lh-sm mb-0" style="font-size: 0.75rem;">História e cultura do Seridó.</p>
-                            </div>
-
-                            <div class="col timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="bi bi-egg-fried"></i>
-                                </div>
-                                <div class="fw-bold mb-1" style="font-size: 0.8rem;">13:00</div>
-                                <h3 class="fw-bold mb-1 text-dark" style="font-size: 0.9rem;">Almoço</h3>
-                                <p class="text-muted lh-sm mb-0" style="font-size: 0.75rem;">Sabores típicos da cozinha seridoense.</p>
-                            </div>
-
-                            <div class="col timeline-item">
-                                <div class="timeline-icon">
-                                   <i class="bi bi-globe-americas"></i>
-                                </div>
-                                <div class="fw-bold mb-1" style="font-size: 0.8rem;">15:00</div>
-                                <h3 class="fw-bold mb-1 text-dark" style="font-size: 0.9rem;">Geossítios</h3>
-                                <p class="text-muted lh-sm mb-0" style="font-size: 0.75rem;">Mirantes, Serras e natureza exuberante.</p>
-                            </div>
-
-                            <div class="col timeline-item">
-                                <div class="timeline-icon">
-                                    <i class="bi bi-moon-stars-fill"></i>
-                                </div>
-                                <div class="fw-bold mb-1" style="font-size: 0.8rem;">18:00</div>
-                                <h3 class="fw-bold mb-1 text-dark" style="font-size: 0.9rem;">Luar</h3>
-                                <p class="text-muted lh-sm mb-0" style="font-size: 0.75rem;">Luar e Jantar.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="d-md-none">
-                        <div class="mb-3 ps-3 border-start border-2 border-danger">
-                            <span class="badge bg-danger-subtle text-danger mb-1">08:00</span>
-                            <h4 class="h6 fw-bold mb-1">Boas-vindas</h4>
-                            <p class="text-muted small mb-0">Recepção em Acari e café regional.</p>
-                        </div>
-                        <div class="mb-3 ps-3 border-start border-2 border-danger">
-                            <span class="badge bg-danger-subtle text-danger mb-1">09:00</span>
-                            <h4 class="h6 fw-bold mb-1">Pedra do Navio</h4>
-                            <p class="text-muted small mb-0">Visita a geossítios e trilhas curtas.</p>
-                        </div>
-                        <div class="mb-3 ps-3 border-start border-2 border-danger">
-                            <span class="badge bg-danger-subtle text-danger mb-1">11:00</span>
-                            <h4 class="h6 fw-bold mb-1">Museu do Seridó</h4>
-                            <p class="text-muted small mb-0">História e cultura do Seridó.</p>
-                        </div>
-                        <div class="mb-3 ps-3 border-start border-2 border-danger">
-                            <span class="badge bg-danger-subtle text-danger mb-1">13:00</span>
-                            <h4 class="h6 fw-bold mb-1">Almoço</h4>
-                            <p class="text-muted small mb-0">Sabores típicos da cozinha seridoense.</p>
-                        </div>
-                        <div class="mb-3 ps-3 border-start border-2 border-danger">
-                            <span class="badge bg-danger-subtle text-danger mb-1">15:00</span>
-                            <h4 class="h6 fw-bold mb-1">Geossítios</h4>
-                            <p class="text-muted small mb-0">Mirantes, Serras e natureza exuberante.</p>
-                        </div>
-                        <div class="mb-3 ps-3 border-start border-2 border-danger">
-                            <span class="badge bg-danger-subtle text-danger mb-1">18:00</span>
-                            <h4 class="h6 fw-bold mb-1">Luar</h4>
-                            <p class="text-muted small mb-0">Luar e Jantar.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <h2 class="h4 fw-bold mb-3 title-style">Informações práticas</h2>
-                        <div class="info-card">
-                            <div class="info-item">
-                                <div class="info-item-icon"><i class="bi bi-stopwatch"></i></div>
-                                <div>
-                                    <strong class="d-block">Duração:</strong>
-                                    <span class="text-muted small">Roteiro de 1 dia (aprox. 12 horas)</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-item-icon"><i class="bi bi-trophy"></i></div>
-                                <div>
-                                    <strong class="d-block">Nível de atividade:</strong>
-                                    <span class="text-muted small">Leve a moderado. Trilhas curtas e acessos fáceis.</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-item-icon"><i class="bi bi-backpack2"></i></div>
-                                <div>
-                                    <strong class="d-block">O que levar:</strong>
-                                    <span class="text-muted small">Roupas leves, chapéu, protetor solar, água e câmera.</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-item-icon"><i class="bi bi-signpost-2"></i></div>
-                                <div>
-                                    <strong class="d-block" id="como-chegar">Como chegar:</strong>
-                                    <span class="text-muted small">A partir de Natal: aprox. 3h30 de carro (215 km).</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h2 class="h4 fw-bold mb-3 title-style">Melhor época para visitar</h2>
-                        <div class="info-card">
-                            <table class="table-clima">
-                                <thead>
-                                    <tr>
-                                        <th>Período</th>
-                                        <th>Clima/Condições</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Jan–Abr</strong></td>
-                                        <td><i class="bi bi-sun-fill text-warning me-2"></i> Clima quente e seco, céu limpo.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Mai–Ago</strong></td>
-                                        <td><i class="bi bi-cloud-sun-fill text-secondary me-2"></i> Temperaturas amenas, ideal para trilhas.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Set–Dez</strong></td>
-                                        <td><i class="bi bi-cloud-rain-fill text-info me-2"></i> Mais chuvas, paisagens verdes e reservatórios cheios.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-lg-4">
-                <aside class="card-booking shadow-sm">
-                    <h2 class="h3 fw-bold mb-4 title-style">Quero conhecer</h2>
-                    
-                    <form>
-                        <div class="mb-3">
-                            <label for="data" class="form-label fw-semibold small text-secondary">Data desejada</label>
-                            <input type="date" id="data" class="form-control">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="viajantes" class="form-label fw-semibold small text-secondary">Viajantes</label>
-                            <select id="viajantes" class="form-select">
-                                <option value="">Selecione o número de viajantes</option>
-                                <option value="1">1 viajante</option>
-                                <option value="2">2 viajantes</option>
-                                <option value="3">3 ou mais viajantes</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="nome" class="form-label fw-semibold small text-secondary">Nome completo</label>
-                            <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-semibold small text-secondary">E-mail</label>
-                            <input type="email" id="email" class="form-control" placeholder="seu@email.com">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="telefone" class="form-label fw-semibold small text-secondary">Telefone / WhatsApp</label>
-                            <input type="tel" id="telefone" class="form-control" placeholder="(84) 99999-9999">
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="mensagem" class="form-label fw-semibold small text-secondary">Mensagem (opcional)</label>
-                            <textarea id="mensagem" class="form-control" rows="3" placeholder="Conte-nos algo sobre sua viagem"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-booking w-100 d-flex align-items-center justify-content-center gap-2">
-                            <i class="bi bi-send-fill"></i>
-                            ENVIAR INTERESSE
-                        </button>
-                        
-                        <p class="text-center mb-0 mt-3">
-                            <small class="text-muted" style="font-size: 0.75rem;">
-                                <i class="bi bi-shield-lock-fill"></i>
-                                Seus dados estão seguros e não serão compartilhados.
-                            </small>
-                        </p>
-                    </form>
-                </aside>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container pb-4 rounded-4">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="imagens1/LogoRotaDoSerido.png" alt="Logo Rota do Seridó" width="120" height="80" class="mb-2">
-                        <span class="footer-logo-title fs-4">Rota do Seridó</span>
-                    </div>
-                    <p class="text-muted small">A Rota do Seridó é um convite para viver experiências autênticas em um dos territórios mais acolhedores do Rio Grande do Norte.</p>
-                </div>
-                <div class="col-lg-2 col-6 col-md-3">
-                    <h3 class="h6 fw-bold mb-3 text-uppercase" style="letter-spacing: 1px;">Navegação</h3>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#inicio-pg" class="footer-link">Início</a></li>
-                        <li class="mb-2"><a href="destinos.html" class="footer-link">Destinos</a></li>
-                        <li class="mb-2"><a href="#Roteiro" class="footer-link">Roteiros</a></li>
-                        <li class="mb-2"><a href="index.html" class="footer-link">Sobre</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-6 col-md-3">
-                    <h3 class="h6 fw-bold mb-3 text-uppercase" style="letter-spacing: 1px;">Informações</h3>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#como-chegar" class="footer-link">Como chegar</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Onde ficar</a></li>
-                        <li class="mb-2"><a href="#como-chegar" class="footer-link">Dicas úteis</a></li>
-                        <li class="mb-2"><a href="#fale-conosco" class="footer-link">Fale conosco</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <h3 class="h6 fw-bold mb-3 text-uppercase" style="letter-spacing: 1px;">Siga e compartilhe</h3>
-                    <div class="mb-3" id="fale-conosco">
-                        <a href="#" class="social-link"><i class="bi bi-instagram class="text-orange;></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-facebook text-primary"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-youtube text-danger"></i></a>
-                    </div>
-                    <p class="fw-bold mb-3 text-orange">#RotaDoSeridó</p>
-
-                    <h3 class="h6 fw-bold mb-2 text-uppercase" style="letter-spacing: 1px; font-size: 0.8rem;">Inspiração</h3>
-                    <div class="d-flex gap-2 mb-1">
-                        <img src="imagens1/Vaqueiros.png" alt="Pessoas andando a cavalo" class="img-gallery-thumb">
-                        <img src="imagens1/açude2.png" alt="Rio entre montanhas" class="img-gallery-thumb">
-                        <img src="imagens1/solNascer.png" alt="Prato de comida regional" class="img-gallery-thumb">
-                        <img src="imagens1/cuscuz.png" alt="Pôr do sol no sertão com cacto" class="img-gallery-thumb">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sub-footer text-center">
-            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <span class="mb-2 mb-md-0">© 2026 Rota do Seridó. Todos os direitos reservados.</span>
-            </div>
-        </div>
-    </footer>
 </body>
+
 </html>

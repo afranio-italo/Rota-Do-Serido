@@ -1,221 +1,73 @@
-* {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-
-.html{
-    padding: 20px 60px;
-}
-  
 body {
-  margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  overflow-x: hidden; 
-  height: auto ;
- 
-}
-
-header,main {
-  width: min(92%, 70rem);
-  margin: 0 auto;
 }
 
 header {
-  padding: 3rem 0 1rem;
+  color: #032844;
 }
 
-a {
-  color: #000000 ;
-   transition: color 0.2s ease-in-out;
+html, body {
+  overflow-x: hidden;
 }
-a:hover {
-   color: #bf6c54;
-}
-.corpo{
-  background-color:#fffffd;
-  }
-.banner {
-  position:relative;
-  background-image: url('imagens1/bannerGeoparque.png');
-  background-size: auto;   
-  background-position: center;  
-  min-height: 250px;   
-  width: 100%;   
-  padding: auto;
-  text-indent: 2.5em;          
-}
-.btn{
-  color: #bf6c54 ;
-   transition: color 0.2s ease-in-out;
-}
-.btn:hover{
-  color: #df4b22;
-}
- 
+
+
 :root {
---accent-orange: #B84A1D;
---accent-light: #e6e0e0 ;
---border-color: #E3DEC2;
+    --bs-danger: #C15A2E;
+    --bs-danger-rgb: 193, 90, 46;
 }
 
-body {
-    background-color: var(--bg-page);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--primary-dark);
+.btn-danger {
+    --bs-btn-bg: #C15A2E;
+    --bs-btn-border-color: #C15A2E;
+    --bs-btn-hover-bg: #A94A24;
+    --bs-btn-hover-border-color: #A94A24;
 }
 
-.timeline-container {
-    position: relative;
+#navegacao-principal a {
+    padding-bottom: .25rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s ease;
 }
-.timeline-line {
+
+#navegacao-principal a:hover {
+    border-bottom-color: #C15A2E;
+}
+
+.tl-line {
     position: absolute;
-    top: 25px;
-    left: 45px;
-    right: 45px;
-    height: 2px;
-    border-top: 2px dashed var(--accent-orange);
-    z-index: 1;
-    opacity: 0.6;
+    top: 24px;
+    left: 0;
+    right: 0;
+    border-top: 2px dashed #C15A2E;
+    z-index: 0;
 }
-.timeline-item {
-    position: relative;
-    z-index: 2;
-}
-.timeline-icon {
-    width: 50px;
-    height: 50px;
+
+.tl-icon {
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background-color: #fff;
-    border: 2px solid var(--accent-orange);
-    color: var(--accent-orange);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 12px auto;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 0 auto .5rem;
+    position: relative;
+    z-index: 1;
 }
 
-.info-card {
-    background-color: var(--accent-light);
-    border-radius: 16px;
-    padding: 24px;
-    border: 1px solid var(--border-color);
-    height: 100%;
+.tl-on {
+    background: #C15A2E;
+    color: #fff;
 }
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
+
+.tl-off {
+    background: #fff;
+    border: 2px solid #3E7D4F;
+    color: #3E7D4F;
 }
-.info-item:last-child {
-    margin-bottom: 0;
-}
-.info-item-icon {
-    width: 40px;
-    height: 40px;
-    background:  #9c3c15;
-    border-radius: 10px;
-    display: flex;
+
+#rodape-final {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    margin-right: 15px;
-    flex-shrink: 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    column-gap: .5rem;
 }
-
-
-.table-clima {
-    width: 100%;
-    font-size: 0.9rem;
-}
-.table-clima th {
-    font-weight: 700;
-    color: var(--primary-dark);
-    border-bottom: 1px solid var(--border-color);
-    padding: 10px 8px;
-}
-.table-clima td {
-    padding: 12px 8px;
-    border-bottom: 1px dashed var(--border-color);
-    color: var(--primary-dark);
-}
-
-.card-booking {
-    background-color: var(--accent-light);
-    border: 1px solid var(--border-color);
-    border-radius: 24px;
-    padding: 30px;
-}
-.card-booking h2 {
-    color: var(--primary-dark);
-}
-.form-control, .form-select {
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 12px;
-    background-color: #ffffff;
-    color: var(--primary-dark);
-}
-.form-control::placeholder {
-    color: #008cff;
-}
-.btn-booking {
-    background-color: var(--accent-orange);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 14px;
-    font-weight: 700;
-    transition: all 0.2s ease-in-out;
-}
-.btn-booking:hover {
-    background-color: #9c3c15;
-    color: #fff;
-}
-
-footer {
-    background-color: var(--accent-light);
-    border-top: 1px solid var(--border-color);
-    padding-top: 50px;
-    margin-top: 80px;
-}
-.footer-logo-title {
-    color: var(--primary-dark);
-}
-.footer-link {
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-.footer-link:hover {
-    color: var(--accent-orange);
-}
-.social-link {
-    font-size: 1.5rem;
-    color: var(--accent-orange);
-    margin-right: 15px;
-    transition: opacity 0.2s;
-}
-.social-link:hover {
-    opacity: 0.8;
-}
-.img-gallery-thumb {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 8px;
-    background-color: #ddd;
-}
-.sub-footer {
-    background-color: var(--primary-dark);
-    color: #420000;
-    font-size: 0.85rem;
-    padding: 15px 0;
-    margin-top: 40px;
-}
-
-        
